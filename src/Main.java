@@ -17,7 +17,7 @@ public class Main {
             if (Objects.equals(weapon, "0")){
                 exitCondition = 0;
             } else {
-                //execute selection command
+                Weapons.PrintDetailsSelection(weapon);
             }
 
 
