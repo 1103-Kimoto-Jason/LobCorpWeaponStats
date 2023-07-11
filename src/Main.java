@@ -8,7 +8,7 @@ public class Main {
         int exitCondition = 1;
 
         while (exitCondition != 0){
-            System.out.print("Select a weapon, 0 to exit: ");
+            System.out.print("Type in weapon for the stats, 0 to exit: ");
             Scanner weaponInput = new Scanner(System.in);
             weapon = weaponInput.nextLine();
 
