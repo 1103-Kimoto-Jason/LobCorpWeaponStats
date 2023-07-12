@@ -1,10 +1,35 @@
+import java.util.Scanner;
+
 public class Weapons {
+
+    public static void DisplayWeapons(){
+        Scanner dangerLevel = new Scanner(System.in);
+        String level = dangerLevel.nextLine();
+
+        switch (level){
+            case "Zayin", "zayin" -> System.out.println("Penitence\nSoda\nWingbeat");
+
+            case "Teth", "teth" -> System.out.println("");
+
+            case "He", "he" -> System.out.println("");
+
+            case "Waw", "waw" -> System.out.println("");
+
+            case "Aleph", "aleph" -> System.out.println("");
+        }
+
+    }
 
     public static void PrintDetailsSelection(String weapon){
         switch (weapon){
-            case "Soda" -> System.out.println("Bad!");
-            default -> System.out.println("Weapon not recognized");
+
         }
     }
 
+    public static void PrintDetails(String weapon) {
+
+    }
 }
+
+
+
