@@ -1,4 +1,3 @@
-import java.util.Objects;
 import java.util.Scanner;
 
 public class Main {
@@ -17,26 +16,25 @@ public class Main {
 
 
             switch (menuSelection){
-                case 1:
-                        System.out.println("In development");
-                        break;
+                case 1 -> Weapons.DisplayWeapons();
 
-                case 2:
-                        System.out.print("Which weapon do you want stats for: ");
-                        Scanner weaponInput = new Scanner(System.in);
-                        String weapon = weaponInput.nextLine();
-                        System.out.println("You selected the weapon: " + weapon);
-                        Weapons.PrintDetailsSelection(weapon);
-                        break;
-                case 0:
-                        System.out.println("Exiting program...");
-                        exitCondition = 0;
-                        break;
 
-                default:
-                        System.out.println("Command not recognized");
-                        break;
+                case 2 -> {
+                    System.out.print("Which weapon do you want stats for: ");
+                    Scanner weaponInput = new Scanner(System.in);
+                    String weapon = weaponInput.nextLine();
+                    System.out.println("You selected the weapon: " + weapon);
+                    Weapons.PrintDetailsSelection(weapon);
 
+                }
+                case 0 -> {
+                    System.out.println("Exiting program...");
+                    exitCondition = 0;
+                }
+                default -> {
+                    System.out.println("Command not recognized");
+
+                }
 
 
             }
