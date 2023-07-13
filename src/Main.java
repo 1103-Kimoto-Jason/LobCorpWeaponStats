@@ -31,10 +31,7 @@ public class Main {
                     System.out.println("Exiting program...");
                     exitCondition = 0;
                 }
-                default -> {
-                    System.out.println("Command not recognized");
-
-                }
+                default -> System.out.println("Command not recognized");
 
 
             }
